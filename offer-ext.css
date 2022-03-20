@@ -1,0 +1,69 @@
+.form-group {
+	width: 100%;
+	overflow: hidden;
+}
+
+.form-group label {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+	font-size: 11pt;
+	display: block;
+}
+
+.form-group input {
+	width: 100%;
+	height: 40px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+.swal2-popup {
+    font-size: 1.6rem !important;
+}
+
+.swal2-popup .swal2-content textarea{
+	height: 120px;
+    overflow: hidden;
+    overflow-y: auto;
+	resize: none;
+}
+
+.swal2-popup .swal2-actions.form-offer{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.swal2-popup .swal2-actions .swal2-cancel.swal2-form-cancel{
+	display: inline-block;
+    color: #333;
+    background: transparent;
+    text-decoration-line: underline;
+}
+
+.swal2-popup .swal2-actions .swal2-confirm.swal2-form-confirm{
+	background: #E00;
+}
+
+.swal2-popup .swal2-content .form-group:last-child label:last-child{
+	position: absolute;
+    bottom: 15px;
+    right: 10px;
+    width: auto;
+}
+.swal2-popup .swal2-content .form-group:last-child ::-webkit-scrollbar {
+    width: 5px;
+    height: 7px;
+}
+.swal2-popup .swal2-content .form-group:last-child ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.swal2-popup .swal2-content .form-group:last-child ::-webkit-scrollbar-thumb {
+    background: #DDD;
+    border-radius: 20px
+}
+.swal2-popup .swal2-content .form-group:last-child ::-webkit-scrollbar-thumb:hover {
+    background: #AAA; 
+}
