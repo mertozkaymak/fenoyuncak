@@ -165,7 +165,7 @@ $(document).ready(function() {
 
 					Swal.fire({
 						title: 'Teklifiniz oluşturuluyor...',
-						html: '<img src="https://dev.digitalfikirler.com/fenoyuncak/images/loading.gif" width="120"/>',
+						html: '<img src="***/images/loading.gif" width="120"/>',
 						allowOutsideClick: false,
 						allowEscapeKey: false,
 						allowEnterKey: false,
@@ -179,7 +179,7 @@ $(document).ready(function() {
 
 					$.ajax({
 						type: "GET",
-						url: "https://dev.digitalfikirler.com:6565/pdfgenerator",
+						url: "***/pdfgenerator",
 						data: "info=" + JSON.stringify(info),
 						success: function(response){
 
