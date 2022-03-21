@@ -200,8 +200,8 @@ $objWriter->save(__DIR__ . "/pdf/" . $excel);
 
 array_push($attachment, ["path" => __DIR__ . "/pdf/" . $excel, "name" => $excel, "type" => "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"]);
 
-$body = '<img src="https://dev.digitalfikirler.com/fenoyuncak/images/logo.png" width="220"/><br><br>Sayın yetkili,<br><br>' . $name . ' bir teklif talebinde bulundu. Teklif örneği ektedir.<br><br>Müşteri Bilgileri:<br><br>Firma Adı: ' . $firm . '<br>Ad/Soyad: ' . $name . '<br>E-Mail: ' . $email . '<br>Telefon: ' . $phone . '<br><br>İyi çalışmalar dileriz.';
-$response2 = sendEmail("tolga@fenoyuncak.com", "fenoyuncak.com", $body, $attachment);
+$body = '<img src="***images/logo.png" width="220"/><br><br>Sayın yetkili,<br><br>' . $name . ' bir teklif talebinde bulundu. Teklif örneği ektedir.<br><br>Müşteri Bilgileri:<br><br>Firma Adı: ' . $firm . '<br>Ad/Soyad: ' . $name . '<br>E-Mail: ' . $email . '<br>Telefon: ' . $phone . '<br><br>İyi çalışmalar dileriz.';
+$response2 = sendEmail("***", "***", $body, $attachment);
 
 if($response == 1 && $response2 == 1) {
 	echo 1;
@@ -217,15 +217,15 @@ function sendEmail($email, $name, $body, $attachment = null) {
 		$mail->IsSMTP();
 
 		$mail->SMTPAuth = true;
-		$mail->Host = 'mail.fenoyuncak.com';
+		$mail->Host = 'mail.***';
 		$mail->Port = 587;
-		$mail->Username = 'tolga@fenoyuncak.com';
-		$mail->Password = 'Fenoyuncak123456';
+		$mail->Username = '***';
+		$mail->Password = '***';
 
-		$mail->SetFrom("tolga@fenoyuncak.com", 'fenoyuncak.com');
+		$mail->SetFrom("***", '***');
 		$mail->AddAddress($email, $name);
 		$mail->CharSet = 'UTF-8';
-		$mail->Subject = 'Teklif - fenoyuncak.com';
+		$mail->Subject = '***';
 		$mail->IsHTML(true);
 		$mail->MsgHTML($body);
 
