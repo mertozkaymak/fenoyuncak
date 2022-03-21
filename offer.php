@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 date_default_timezone_set('Europe/Istanbul');
 
-$db = new mysqli("localhost", "fenoyuncak", "Digital1357*c", "fenoyuncak");
+$db = new mysqli("localhost", "***", "***", "***");
 
 if ($db->connect_error) {
 	die("Connection failed: " . $db->connect_error);
@@ -472,13 +472,13 @@ function sayiyiYaziyaCevir($sayi, $kurusbasamak, $parabirimi, $parakurus, $diyez
         
         <header>
             <div id="logo">
-                <img src="https://dev.digitalfikirler.com/fenoyuncak/images/logo.png" height="90"/>
+                <img src="***/images/logo.png" height="90"/>
             </div>
 
             <div id="heading">
-                <span class="h1">FEN OYUNCAK LTD. ŞTİ.</span>
-                <span class="h2">İSTOÇ 6. Ada No:61 Mahmutbey İstanbul / Bağcılar / Türkiye<br>
-                Tel: 0212 771 39 79 - Fax: 0212 771 39 83 - <span class="bold">tolga@fenoyuncak.com</span></span>
+                <span class="h1">***</span>
+                <span class="h2">*** İstanbul / Bağcılar / Türkiye<br>
+                Tel: 0212 *** ** ** - Fax: 0212 *** ** ** - <span class="bold">***</span></span>
             </div>
             
         </header>
@@ -594,12 +594,12 @@ function sayiyiYaziyaCevir($sayi, $kurusbasamak, $parabirimi, $parakurus, $diyez
                     <li>ING Bankası</li>
                 </ul>
                 <ul>
-                    <li>TR34 0004 6001 6188 8000 2974 16</li>
-                    <li>TR32 0011 1000 0000 0072 6761 15</li>
-                    <li>TR07 0006 2000 0910 0006 2926 27</li>
-                    <li>TR74 0006 7010 0000 0064 9599 57</li>
-                    <li>TR27 0006 4000 0011 2190 3466 29</li>
-                    <li>TR86 0009 9023 2671 2300 1000 01</li>
+                    <li>TR** *** *** *** *** *** **</li>
+                    <li>TR** *** *** *** *** *** **</li>
+                    <li>TR** *** *** *** *** *** **</li>
+                    <li>TR** *** *** *** *** *** **</li>
+                    <li>TR** *** *** *** *** *** **</li>
+                    <li>TR** *** *** *** *** *** **</li>
                 </ul>
             </div>
             <div class="inner-container small">
